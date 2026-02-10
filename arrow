@@ -1,0 +1,19 @@
+const distanceTraveledMiles = [10, 20, 30, 40, 50, 60, 70]
+
+const distanceTraveledKm = distanceTraveledMiles.map(distance => Math.round(distance * 1.6))
+
+const speedometer = speed => `your're going at ${speed} mph`
+
+const speedWarning = (speedLimit, speed) => {
+    if (speed > speedLimit) {
+        return `your're going at ${speed} mph`
+    }
+}
+
+function Totalcost( arrayOfItemsBoughtObjects) {
+    const total = arrayOfItemsBoughtObjects.reduce((total, currentItem) => 
+    total + currentItem.priceUSD, 0
+)
+}
+
+console.log(distanceTraveledKm)
